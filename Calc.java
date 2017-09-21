@@ -18,7 +18,7 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 import java.awt.Font;
 
-public class View {
+public class Calc {
 
 	private JFrame frame;
 	private JButton btnSqrt;
@@ -36,7 +36,7 @@ public class View {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					View window = new View();
+					Calc window = new Calc();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -48,7 +48,7 @@ public class View {
 	/**
 	 * Create the application.
 	 */
-	public View() {		
+	public Calc() {		
 		initialize();
 		listen();
 	}
